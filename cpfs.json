@@ -1,0 +1,57 @@
+[
+  {
+    "cpf": "44102588850",
+    "nome": "Giovani Henrique Braz Nunes",
+    "idade": "17 anos",
+    "data_nascimento": "21/11/2007",
+    "estado_nascimento": "SP",
+    "ddd": "11",
+    "sexo": "M - Masculino",
+    "escolaridade": "Ensino Medio Cursando",
+    "nome_mae": "Ana Paula De Toledo Silverio Nunes",
+    "nome_pai": "Ricardo De Almeida Braz Nunes",
+    "parentes": "",
+    "telefones": ""
+  },
+  {
+    "cpf": "035444182467",
+    "nome": "Joao Alves Da Silva Filho",
+    "idade": "44 anos",
+    "data_nascimento": "30/04/1980",
+    "sexo": "M - Masculino",
+    "escolaridade": "Ensino Fundamental Completo",
+    "nome_mae": "Luzia Moura Da Silva",
+    "nome_pai": "Erro.",
+    "eleitor_titulo": "341135230183"
+  },
+  {
+    "cpf": "14537951621",
+    "nome": "Yago Henrique Ribeiro",
+    "data_nascimento": "16/07/2004",
+    "idade": "19 anos",
+    "sexo": "M - Masculino",
+    "nome_mae": "Erro",
+    "nome_pai": "Erro",
+    "escolaridade": "Sem Informacao",
+    "parentes": "",
+    "telefones": ""
+  },
+  {
+    "cpf": "14587534684",
+    "nome": "Yago Henrique Silva Ribeiro",
+    "data_nascimento": "23/06/2010",
+    "sexo": "M - Masculino"
+  },
+  {
+    "cpf": "71797610104",
+    "nome": "Carlos Andre Ribeiro Clementino",
+    "data_nascimento": "12/06/1980",
+    "escolaridade": "",
+    "idade": "43 anos",
+    "sexo": "M - Masculino",
+    "nome_mae": "Raimunda Nonata Ribeiro Clementino",
+    "nome_pai": "Erro",
+    "parentes": "CPF: 660486133 NOME: Antonio Clementino Ribeiro Filho Vinculo: Irma(o)",
+    "telefones": "27988483815, 21997411241, 27998256843, 2732446484, 27988116244"
+  }
+]
