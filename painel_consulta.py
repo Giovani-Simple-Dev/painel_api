@@ -28,23 +28,25 @@ exibir_banner()
 def menu():
   while True:
     cls()
-    print(Fore.GREEN + "1. Consultar IP [ON]")
-    print(Fore.GREEN + "2. Consultar CEP [ON]")
-    print(Fore.RED + "3. Consultar CPF [TESTE]")
-    print(Fore.GREEN + "4. Consultar Feriados [ON]")
-    print(Fore.GREEN + "5. Vericar Participantes do PIX [ON]")
-    print(Fore.GREEN + "6. Consultar DDD [ON]")
-    print(Fore.GREEN + "7. Corretoras Presentes na CVM [ON]")
-    print(Fore.GREEN + "8. Consultar CNPJ [ON]")
-    print(Fore.RED + "9. Consultar Nome [OFF]")
-    print(Fore.RED + "10. Consultar APIs [OFF]")
-    print(Fore.CYAN + "0. Sair")
+    print(Fore.GREEN + "1. Consultar IP [+_+]")
+    print(Fore.GREEN + "2. Consultar CEP [+_+]")
+    print(Fore.GREEN + "3. Consultar CPF [+_+]")
+    print(Fore.GREEN + "4. Consultar Feriados [+_+]")
+    print(Fore.GREEN + "5. Vericar Participantes do PIX [+_+]")
+    print(Fore.GREEN + "6. Consultar DDD [+_+]")
+    print(Fore.GREEN + "7. Corretoras Presentes na CVM [+_+]")
+    print(Fore.GREEN + "8. Consultar CNPJ [+_+]")
+    print(Fore.GREEN + "9. Consultar Bancos [+_+]")
+    print(Fore.GREEN + "10. Consultar BIN [+_+]")
+    print(Fore.CYAN + "0. Sair [=(]")
     choice = input("Digite a opção: ")
 
     if choice == "1":
       consultar_ip()
     elif choice == "2":
       consultar_cep()
+    elif choice == "3":
+      consultar_cpf()
     elif choice == "4":
       consultar_feriados()
     elif choice == "5":
@@ -55,10 +57,10 @@ def menu():
       corretoras_cvm()
     elif choice == "8":
       consultar_cnpj()
-    elif choice == "3":
-      consultar_cpf()
+    elif choice == "9":
+      consultar_banco()
     elif choice == "10":
-      mensagem()
+      consultar_bin()
     elif choice == "0":
       print("Saindo...")
       break
@@ -220,6 +222,33 @@ def mensagem():
   input("Pressione Enter para continuar...")
 mensagem()
 
+def consultar_banco():
+  code = input("Digite o código do banco(Exemplo: Código 1, Código 2): ")
+  response = requests.get(f"https://brasilapi.com.br/api/banks/v1/{code}")
+  data = response.json()
+  if response.status_code == 200:
+    print(f"ISPB: {data['ispb']}")
+    print(f"NOME: {data['name']}")
+    print(f"CODIGO: {data['code']}")
+    print(f"NOME COMPLETO: {data['fullName']}")
+  input("Pressione Enter para continuar...")
+
+def consultar_bin():
+  bin = input("Digite o código bin: ")
+  response = requests.get(f"https://lookup.binlist.net/{bin}")
+  data = response.json()
+  if response.status_code == 200:
+    print(f"Numero: {data.get('number', {}).get('length')}")
+    print(f"Cartao Valido: {data.get('numeber', {}).get('luhn')}")
+    print(f"Marca: {data.get('brand')}")
+    print(f"Esquema: {data.get('scheme')}")
+    print(f"Tipo: {data.get('type')}")
+    print(f"País: {data.get('country', {}).get('name')}")
+    print(f"Banco: {data.get('bank', {}).get('name')}")
+    print(f"URL do Banco: {data.get('bank', {}).get('url')}")
+    print(f"Telefone do Banco: {data.get('bank', {}).get('phone')}")
+    print(f"Cidade do Banco: {data.get('bank', {}).get('city')}")
+  input("Pressione Enter para continuar...")
 
 if __name__ == "__main__":
   menu()
