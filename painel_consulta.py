@@ -68,13 +68,6 @@ def menu():
       print("Opção inválida")
       sleep(2)
 
-def consultar_nome():
-  nome = input("Digite o Nome: ")
-  response = requests.get(f"http://ghostcenter.xyz/api/nome/{nome}")
-  data = response.json()
-  if response.status_code == 200:
-    print(f"CPF: {data['cpf']}")
-    print(f"Data de Nascimento: {data['data_nascimento']}")
   
 def consultar_ip():
   ip = input("Digite o IP: ")
