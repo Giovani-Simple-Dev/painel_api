@@ -68,7 +68,7 @@ def menu():
       print("Opção inválida")
       sleep(2)
 
-  
+
 def consultar_ip():
   ip = input("Digite o IP: ")
   response = requests.get(f"http://ip-api.com/json/{ip}")
@@ -210,10 +210,6 @@ def rastreio():
     print(f"CEP: {data['cep']}")
     print(f"Cidade: {data['cidade']}")
 
-def mensagem():
-  print("Para ter acesso as APIs entre em: https://github.com/Giovani-Simple-Dev/painel/blob/main/README.md")
-  input("Pressione Enter para continuar...")
-mensagem()
 
 def consultar_banco():
   code = input("Digite o código do banco(Exemplo: Código 1, Código 2): ")
