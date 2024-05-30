@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Função para ler dados do arquivo JSON
 def ler_dados_json():
-    with open('api_cpf\cpfs.json', 'r') as file:
+    with open('cpfs.json', 'r') as file:
         dados = json.load(file)
     return dados
 
