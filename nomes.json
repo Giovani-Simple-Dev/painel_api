@@ -1,0 +1,70 @@
+[
+ {
+    "nome": "SENOR ABRAVANEL",
+    "cpf": "00829102868",
+    "nascimento": "12/12/1930",
+    "mae": "REBECA ABRAVANEL"
+ },
+ {
+   "cpf": "10327965967",
+   "nome": "TATIANE CARVALHO LESS",
+   "nascimento": "11/01/1999",
+   "mae": "LINDAMIR DE FATIMA CARVALHO"
+ },
+ {
+   "cpf": "42568246855",
+   "nome": "RODRYGO SILVA DE GOES",
+   "nascimento": "2001-01-09",
+   "mae": "DENISE SILVA PEREIRA DE GOES"
+ },
+ {
+   "cpf": "44930057850",
+   "nome": "EDER GABRIEL MILITAO",
+   "nascimento": "1998-01-18",
+   "mae": "ANA MARIA PINHEIRO MILITAO\n"
+ },
+ {
+   "cpf": "16068330737",
+   "nome": "VINICIUS JOSE PAIXAO DE OLIVEIRA JUNIOR\n",
+   "nascimento": "2000-07-12",
+   "mae": "FERNANDA CRISTINA DO NASCIMENTO SILVA\n"
+ },
+ {
+   "cpf": "08543473721",
+   "nome": "DENNISON DE LIMA GOMES\n",
+   "nascimento": "1980-07-30",
+   "mae": "TANIA REGINA DE LIMA GOMES\n"
+ },
+ {
+   "cpf": "22971179818",
+                "nome": "DANIEL GARCIA FELICIONE NAPOLEAO",
+                "nascimento": "1995-01-18",
+                "mae": "GINA GENEROSO GARCIA"
+ },
+ {
+   "cpf": "48310767838",
+                "nome": "MIRELLA SIERRA FERNANDEZ",
+                "nascimento": "1998-06-08",
+                "mae": "MARCIA CRISTINA VIEIRA DE BARROS FERNANDEZ\n"
+ },
+ {
+   "cpf": "48558864837",
+                "nome": "PEDRO MAIA TEMPESTER",
+                "nascimento": "2002-05-03",
+                "mae": "INDEFINIDO\n"
+ },
+ {
+   "cpf": "05769900784",
+                "nome": "LARISSA DE MACEDO MACHADO",
+                "nascimento": "1993-03-30",
+                "mae": "MIRIAM TEREZA DE MACEDO MACHADO\n"
+ },
+ {
+   
+   "cpf": "08576362945",
+   "nome": "GISELE SOUTO",
+   "nascimento": "1992-10-17",
+   "mae": "ROSANA APARECIDA GLASS\n"
+ }
+
+]

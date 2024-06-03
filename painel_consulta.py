@@ -38,6 +38,7 @@ def menu():
     print(Fore.GREEN + "8. Consultar CNPJ [+_+]")
     print(Fore.GREEN + "9. Consultar Bancos [+_+]")
     print(Fore.GREEN + "10. Consultar BIN [+_+]")
+    print(Fore.GREEN + "11. Consultar Nome [+_+]")
     print(Fore.CYAN + "0. Sair [=(]")
     choice = input("Digite a opção: ")
 
@@ -61,6 +62,8 @@ def menu():
       consultar_banco()
     elif choice == "10":
       consultar_bin()
+    elif choice == "11":
+      consultar_nome()
     elif choice == "0":
       print("Saindo...")
       break
@@ -68,6 +71,12 @@ def menu():
       print("Opção inválida")
       sleep(2)
 
+def consultar_nome():
+  nome = input("Digite o Nome: ")
+  response = requests.get(f"http://localhost:5000/consulta_nome?nome={nome}")
+  dic_response = response.json()
+  print(dic_response)
+  input("Pressione Enter para continuar...")
 
 def consultar_ip():
   ip = input("Digite o IP: ")
@@ -199,16 +208,6 @@ def corretoras_cvm():
     print("Erro ao Buscar Corretoras")
   input("Pressione Enter para continuar...")
 
-
-def rastreio():
-  input("Digite o Código de Rastreio: ")
-  response = requests.get(f"https://gateway.apibrasil.io/api/v2/correios/rastreio")
-  data = response.json()
-  if response.status_code == 200:
-
-    print(f"Descrição: {data['descricao']}")
-    print(f"CEP: {data['cep']}")
-    print(f"Cidade: {data['cidade']}")
 
 
 def consultar_banco():
